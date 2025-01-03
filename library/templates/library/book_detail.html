@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block content %}
+<style>
+    .details {
+        text-align: center;
+    }
+    button {
+    color: #ffffff;
+    background-color: #3e2723;
+    padding: 10px;
+    border-radius:15px;
+    }
+    .back {
+        color: #3e2723 !important;
+        text-decoration: none;
+    }
+    .back:hover {
+        color: #3e2723 !important;
+        text-decoration: underline;
+    }
+  button {
+  margin: 10px 0;
+  }
+</style>
+<div class="details">
+<h1>{{ book.title }}</h1>
+<p><strong>Author:</strong> {{ book.author }}</p>
+  <p><strong>Publication Year:</strong> {{ book.publication_year }}</p>
+  <p><strong>Genre:</strong> {{ book.genre }}</p>
+  <p><strong>Description:</strong> {{ book.description }}</p>
+  <form method="post" action="{% url 'like_book' book.id %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Like</button>
+  </form>
+  <form method="post" action="{% url 'save_book' book.id %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-secondary">Save</button>
+  </form>
+<a class="back" href="{% url 'book_list' %}">Back to Books</a>
+</div>
+{% endblock %}

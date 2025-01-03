@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Book List</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Created at</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for book in books %}
+        <tr>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.created_at }}</td>
+          <td>{{ book.description }}</td>
+          <td>
+            <a href="{% url 'edit_book' book.id %}" class="btn btn-primary">Edit</a>
+            <form method="post" action="{% url 'delete_book' book.id %}" style="display:inline;">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="{% url 'add_book' %}" class="btn btn-success">Add Book</a>
+{% endblock %}

@@ -1,0 +1,99 @@
+/* base.css */
+
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f0e1; /* Светлый коричневый фон */
+  color: #4b3d3d; /* Темный коричневый текст */
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4 {
+  color: #3e2723; /* Темно-коричневый цвет заголовков */
+}
+
+
+
+/* Стили для навигации */
+header {
+  background-color: #8d6e63; /* Коричневый фон для навигации */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+p a {
+  color: #3e2723;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff; /* Белый цвет текста для ссылок */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Стили для основного контента */
+main {
+  padding: 20px;
+}
+
+/* Стили для подвала */
+footer {
+  background-color: #795548; /* Темный коричневый фон для подвала */
+  color: #ffffff !important; /* Белый текст в подвале */
+  padding: 20px 0;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+  color: #ffffff !important;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+/* Стили для контейнера */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Стили для кнопок */
+.btn {
+  background-color: #a0522d; /* Коричневая кнопка */
+  color: #ffffff; /* Белый текст на кнопках */
+}
+
+.btn:hover {
+  background-color: #8b4513; /* Темнее при наведении */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block; /* Вертикальное расположение на мобильных устройствах */
+      margin: 10px 0;
+  }
+}

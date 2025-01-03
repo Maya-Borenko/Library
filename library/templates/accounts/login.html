@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+	form {
+	text-align:center;
+	}
+	input {
+    color: #ffffff;
+    background-color: #3e2723;
+    padding: 10px;
+    border-radius:15px;
+    }
+</style>
+<form method="POST" novalidate>
+	{% csrf_token %}
+	<h2>Login</h2>
+	{{form.as_p}}
+	<input type="submit" value="Login" />
+	<p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+	{% for field in form %}
+      {% if field.errors %}
+        <ul class="errorlist">
+          {% for error in field.errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+</form>
+
+{% endblock content%}

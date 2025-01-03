@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+   .list {
+        color: #3e2723 !important;
+        text-decoration: none;
+   }
+    .list:hover {
+        color: #3e2723 !important;
+        text-decoration: underline;
+   }
+</style>
+  <h1>Change Username</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Change Username</button>
+    <a class="list" href="{% url 'save_book_list' %}">Saved Books</a>
+    <a class="list" href="{% url 'like_book_list' %}">Liked Books</a>
+  </form>
+{% endblock %}

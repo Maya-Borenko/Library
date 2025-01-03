@@ -1,0 +1,156 @@
+[
+  {
+    "model": "library_models.book",
+    "pk": 1,
+    "fields": {
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "description": "Katniss Edin and Peeta Mellark become participants in the Hunger Games, in which 24 teenagers from 12 districts of the country of Panem are depicted not for life, but to death.",
+      "genre": "Dystopia",
+      "created_at": 2008
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 2,
+    "fields": {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "A tale of the mysterious death of Jay Gatsby and the search for the truth.",
+      "genre": "Novel",
+      "created_at": 1925
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 3,
+    "fields": {
+      "title": "To Kill a Mockingbird",
+      "author": "Agatha Christie",
+      "description": "A mystery novel featuring detective Hercule Poirot and a murder on a train.",
+      "genre": "Novel",
+      "created_at": 1939
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 4,
+    "fields": {
+      "title": "Gone with the Wind",
+      "author": "Margaret Mitchell",
+      "description": "The story is set in Clayton County and Atlanta, both in Georgia, during the American Civil War and Reconstruction Era.",
+      "genre": "Novel",
+      "created_at": 1936
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 5,
+    "fields": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "description": "It follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry.",
+      "genre": "Fantasy",
+      "created_at": 1997
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 6,
+    "fields": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J. K. Rowling",
+      "description": "The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the \"Chamber of Secrets\" has been opened and that the \"heir of Slytherin\" would kill all pupils who do not come from all-magical families.",
+      "genre": "Fantasy",
+      "created_at": 1998
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 7,
+    "fields": {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J. K. Rowling",
+      "description": "The novel follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ron Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies.",
+      "genre": "Fantasy",
+      "created_at": 1999
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 8,
+    "fields": {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J. K. Rowling",
+      "description": "It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete. ",
+      "genre": "Fantasy",
+      "created_at": 2000
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 9,
+    "fields": {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J. K. Rowling",
+      "description": " It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic. ",
+      "genre": "Fantasy",
+      "created_at": 2003
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 10,
+    "fields": {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J. K. Rowling",
+      "description": "The novel reveals events from the early life of Lord Voldemort, and chronicles Harry's preparations for the final battle against him. ",
+      "genre": "Fantasy",
+      "created_at": 2005
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 11,
+    "fields": {
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J. K. Rowling",
+      "description": "The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005) and the final confrontation between the wizards Harry Potter and Lord Voldemort. ",
+      "genre": "Fantasy",
+      "created_at": 2007
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 12,
+    "fields": {
+      "title": "Vampire Academy",
+      "author": "Richelle Mead",
+      "description": "This book chronicles the life of 17-year-old Rosemarie Hathaway, commonly known as Rose, a dhampir and her Moroi best friend Vasilisa \"Lissa\" Dragomir after being brought back to their school \"St Vladimir's Academy\" after being on the run for two years. ",
+      "genre": "Romance",
+      "created_at": 2007
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 13,
+    "fields": {
+      "title": "Frostbite",
+      "author": "Richelle Mead",
+      "description": "It is the second novel in the #1 New York Times bestselling series, Vampire Academy. Frostbite continues the story of the main character, Rose Hathaway including her bond with Princess Vasilisa \"Lissa\" Dragomir, her budding romance with her instructor Dimitri Belikov, and her education in becoming a Guardian. ",
+      "genre": "Romance",
+      "created_at": 2008
+    }
+  },
+  {
+    "model": "library_models.book",
+    "pk": 14,
+    "fields": {
+      "title": "Shadow Kiss",
+      "author": "Richelle Mead",
+      "description": "Shadow Kiss continues the story of the main character, Rose Hathaway and her education in becoming a Guardian. ",
+      "genre": "Romance",
+      "created_at": 2008
+    }
+  }
+]

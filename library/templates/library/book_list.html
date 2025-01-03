@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+<style>
+    .books {
+        padding: 20px 10px;
+        margin: 5px 0;
+    }
+    .books:hover {
+        color: #ffffff !important;
+        background: #3e2723;
+    }
+    .books:hover h2 {
+        color: #ffffff !important;
+        background: #3e2723;
+    }
+    .books:hover a{
+        color: #ffffff !important;
+        background: #3e2723;
+    }
+    .book_details {
+        color: #3e2723 !important;
+        text-decoration: none;
+    }
+    .book_details:hover {
+        color: #3e2723 !important;
+        text-decoration: underline;
+    }
+    ul {
+        list-style: none;
+    }
+
+</style>
+<h1>Books</h1>
+<form method="get" action="{% url 'book_list' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+<ul>
+    {% for book in books %}
+        <li class="books">
+            <h2>{{ book.title }}</h2>
+            <p><strong>By:</strong> {{ book.author }}</p>
+            <a class="book_details" href="{% url 'book_detail' book.id %}">View Details</a>
+        </li>
+    {% empty %}
+        <li>No books available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

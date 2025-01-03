@@ -1,0 +1,52 @@
+[  {
+    "model": "library_models.user",
+    "pk": 1,
+    "fields": {
+      "last_login": null,
+      "is_superuser": true,
+      "email": "maxim@gmail.com",
+      "first_name": "Maxim",
+      "last_name": "Mirov",
+      "date_joined": null,
+      "is_active": 1,
+      "password": "123",
+      "username": "Maxim",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "library_models.user",
+    "pk": 2,
+    "fields": {
+      "last_login": null,
+      "is_superuser": true,
+      "email": "evy@gmail.com",
+      "first_name": "Eva",
+      "last_name": "Mal",
+      "date_joined": null,
+      "is_active": 1,
+      "password": "123",
+      "username": "Eva",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "library_models.user",
+    "pk": 3,
+    "fields": {
+      "last_login": null,
+      "is_superuser": true,
+      "email": "lissa@gmail.com",
+      "first_name": "Mellisa",
+      "last_name": "Imi",
+      "date_joined": null,
+      "is_active": 1,
+      "password": "123",
+      "username": "Mellisa",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+	form {
+	text-align:center;
+	}
+	input {
+    color: #ffffff;
+    background-color: #3e2723;
+    padding: 10px;
+    border-radius:15px;
+    }
+</style>
+<form method="POST" novalidate>
+	{% csrf_token %}
+	<h2>Sign Up</h2>
+	{% for field in form %}
+	<p>
+	 	{{ field.label_tag }} {{ field }}
+	</p>
+	{% endfor %}
+	<input type="submit" value="Register" />
+	<p>Already has an account? <a href="{%url 'login' %}">Login</a></p>
+</form>
+{% endblock content%}
